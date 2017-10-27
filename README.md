@@ -6,7 +6,7 @@ Most, but not all elements of Bulma are supported. Check out the full list of sn
 
 ## Setup
 1. Download from Github
-2. Unzip in the extensions folder of Visual Studio Code
+2. Unzip in a new folder inside the extensions folder of Visual Studio Code
 3. Start the editor and have fun!
 
 ## Usage
