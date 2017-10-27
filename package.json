@@ -1,0 +1,21 @@
+{
+    "name": "bulma-snippets",
+    "displayName": "Bulma Snippets",
+    "description": "A set of Bulma snippets taken from https://bulma.io",
+    "version": "0.0.1",
+    "publisher": "TheBeems",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

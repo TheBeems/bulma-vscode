@@ -1,0 +1,621 @@
+{
+	"Bulma html template": {
+		"prefix": "bul-html",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"$1\">",
+			"  <head>",
+			"    <meta charset=\"utf-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"    <title>${2:Title}</title>",
+			"    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css\">",
+			"  </head>",
+			"  <body>",
+			"    $0",
+			"  </body>",
+			"</html>"
+		],
+		"description": "Bulma html template",
+		"scope": ""
+	},
+	"Bulma starter template": {
+		"prefix": "bul-html:start",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"$1\">",
+			"  <head>",
+			"    <meta charset=\"utf-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"    <title>${2:Title}</title>",
+			"    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css\">",
+			"  </head>",
+			"  <body>",
+			"  <section class=\"section\">",
+			"    <div class=\"container\">",
+			"      <h1 class=\"title\">",
+			"        ${3:Hello World!}",
+			"      </h1>",
+			"      <p class=\"subtitle\">",
+			"        ${4:My first website with <strong>Bulma</strong>!}",
+			"      </p>$0",
+			"    </div>",
+			"  </section>",
+			"  </body>",
+			"</html>"
+		],
+		"description": "Bulma starter template",
+		"scope": ""
+	},
+	"bul-cdn:css": {
+		"prefix": "bul-cdn:css",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css\">"
+		],
+		"description": "Bulma cdnjs for the head element.",
+		"scope": ""
+	},
+	"bul-cdn:fa": {
+		"prefix": "bul-cdn:fa",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">"
+		],
+		"description": "Bulma cdnjs for the head element.",
+		"scope": ""
+	},
+	"bul-buttons": {
+		"prefix": "bul-buttons",
+		"body": [
+			"<div class=\"buttons\">",
+			"  <span class=\"button is-${2:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${1:Button}</span>",
+			"  <span class=\"button is-${4:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${3:Button}</span>$5",
+			"</div>$0"
+		],
+		"description": "You can now create a list of buttons with the .buttons container.",
+		"scope": ""
+	},
+	"bul-buttons:addons": {
+		"prefix": "bul-buttons:addons",
+		"body": [
+			"<div class=\"buttons has-addons\">",
+			"  <span class=\"button is-${2:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${1:Button}</span>",
+			"  <span class=\"button is-${4:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${3:Button}</span>$5",
+			"</div>$0"
+		],
+		"description": "You can attach buttons together with the .has-addons modifier.",
+		"scope": ""
+	},
+	"bul-buttons:button": {
+		"prefix": "bul-buttons:button",
+		"body": [
+			"<span class=\"button is-${1:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${2:Button}</span>$0"
+		],
+		"description": "Add a button to the buttons list.",
+		"scope": ""
+	},
+	"bul-button:a": {
+		"prefix": "bul-button:a",
+		"body": [
+			"<a class=\"button is-${1:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${2:Button}</a>$0"
+		],
+		"description": "Add an anchor link button.",
+		"scope": ""
+	},
+	"bul-button:button": {
+		"prefix": "bul-button:button",
+		"body": [
+			"<button class=\"button is-${1:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${2:Button}</button>$0"
+		],
+		"description": "Add an form button button.",
+		"scope": ""
+	},
+	"bul-button:submit": {
+		"prefix": "bul-button:submit",
+		"body": [
+			"<input class=\"button is-${2:primary|link|info|success|warning|danger|white|light|dark|black|text}\" type=\"submit\" value=\"${1:submit}\">$0"
+		],
+		"description": "Add an submit input button.",
+		"scope": ""
+	},
+	"bul-form:field-input": {
+		"prefix": "bul-form:field-input",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control\">",
+			"    <input class=\"input\" type=\"text\" placeholder=\"${2:Text input}\">",
+			"  </div>",
+			"  <p class=\"help\">${3:This is a help text}</p>",
+			"</div>$0"
+		],
+		"description": "Field container for label, input and help.",
+		"scope": ""
+	},
+	"bul-form:field-input-icon": {
+		"prefix": "bul-form:field-input-icon",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control has-icons-${2:left|right}\">",
+			"    <input class=\"input\" type=\"text\" placeholder=\"${3:Text input}\">",
+			"    <span class=\"icon is-small is-${4:left|right}\">",
+			"      <i class=\"fa fa-${5:envelope}\"></i>",
+			"    </span>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for label, input and help with icon",
+		"scope": ""
+	},
+	"bul-form:field-password": {
+		"prefix": "bul-form:field-password",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control\">",
+			"    <input class=\"input\" type=\"password\" name=\"password\" placeholder=\"${2:Text input}\" required=\"required\">",
+			"  </div>",
+			"  <p class=\"help\">${3:This is a help text}</p>",
+			"</div>$0"
+		],
+		"description": "Field container for label, input and help.",
+		"scope": ""
+	},
+	"bul-form:field-password-icon": {
+		"prefix": "bul-form:field-password-icon",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control has-icons-${2:left|right}\">",
+			"    <input class=\"input\" type=\"password\" name=\"password\" placeholder=\"${3:Text input}\" required=\"required\">",
+			"    <span class=\"icon is-small is-${4:left|right}\">",
+			"      <i class=\"fa fa-${5:envelope}\"></i>",
+			"    </span>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for label, password and help with icon",
+		"scope": ""
+	},
+	"bul-form:field-select": {
+		"prefix": "bul-form:field-select",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control\">",
+			"    <div class=\"select\">",
+			"      <select>",
+			"        <option>${2:Option 1}</option>",
+			"        <option>${3:Option 2}</option>$4",
+			"      </select>",
+			"    </div>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for select-control",
+		"scope": ""
+	},
+	"bul-form:field-textarea": {
+		"prefix": "bul-form:field-textarea",
+		"body": [
+			"<div class=\"field\">",
+			"  <label class=\"label\">${1:Label}</label>",
+			"  <div class=\"control\">",
+			"    <textarea class=\"textarea\" placeholder=\"Textarea\">$2</textarea>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for textarea-control",
+		"scope": ""
+	},
+	"bul-form:field-checkbox": {
+		"prefix": "bul-form:field-checkbox",
+		"body": [
+			"<div class=\"field\">",
+			"  <div class=\"control\">",
+			"    <label class=\"checkbox\">",
+			"      <input type=\"checkbox\">",
+			"      ${1:A checkbox}",
+			"    </label>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for checkbox-control",
+		"scope": ""
+	},
+	"bul-form:field-radio": {
+		"prefix": "bul-form:field-radio",
+		"body": [
+			"<div class=\"field\">",
+			"  <div class=\"control\">",
+			"    <label class=\"radio\">",
+			"      <input type=\"radio\" name=\"${1:foobar}\">",
+			"      ${2:Foo}",
+			"    </label>",
+			"    <label class=\"radio\">",
+			"      <input type=\"radio\" name=\"${3:foobar}\">",
+			"      ${4:Bar}",
+			"    </label>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container for radio-control",
+		"scope": ""
+	},
+	"bul-form:field-grouped": {
+		"prefix": "bul-form:field-grouped",
+		"body": [
+			"<div class=\"field is-grouped\">",
+			"  <div class=\"control\">",
+			"    <button class=\"button is-${1:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${2:Submit}</button>",
+			"  </div>",
+			"  <div class=\"control\">",
+			"    <button class=\"button is-${3:primary|link|info|success|warning|danger|white|light|dark|black|text}\">${4:Cancel}</button>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Field container grouped",
+		"scope": ""
+	},
+	"bul-form:file": {
+		"prefix": "bul-form:file",
+		"body": [
+			"<div class=\"file\">",
+			"  <label class=\"file-label\">",
+			"    <input class=\"file-input\" type=\"file\" name=\"resume\">",
+			"    <span class=\"file-cta\">",
+			"      <span class=\"file-icon\">",
+			"        <i class=\"fa fa-upload\"></i>",
+			"      </span>",
+			"      <span class=\"file-label\">",
+			"        ${1:Choose a file…}",
+			"      </span>",
+			"    </span>",
+			"  </label>",
+			"</div>$0"
+		],
+		"description": "A custom file upload input, without JavaScript",
+		"scope": ""
+	},
+	"bul-footer": {
+		"prefix": "bul-footer",
+		"body": [
+			"<footer class=\"footer\">",
+			"  <div class=\"container\">",
+			"    <div class=\"content has-text-centered\">",
+			"      <p>",
+			"        ${1:©2017 All rights reserved.}",
+			"      </p>",
+			"    </div>",
+			"  </div>",
+			"</footer>$0"
+		],
+		"description": "A simple responsive footer which can include anything: lists, headings, columns, icons, buttons, etc.",
+		"scope": ""
+	},
+	"bul-tiles-2col": {
+		"prefix": "bul-tiles-2col",
+		"body": [
+			"<div class=\"tile is-ancestor\">",
+			"  <div class=\"tile is-4 is-vertical is-parent\">",
+			"    <div class=\"tile is-child box\">",
+			"      <p class=\"title\">${1:One}</p>",
+			"      <p>${2:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.}</p>",
+			"    </div>",
+			"    <div class=\"tile is-child box\">",
+			"      <p class=\"title\">${3:Two}</p>",
+			"      <p>${4:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.}</p>",
+			"    </div>",
+			"  </div>",
+			"  <div class=\"tile is-parent\">",
+			"    <div class=\"tile is-child box\">",
+			"      <p class=\"title\">${5:Three}</p>",
+			"      <p>${6:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>}",
+			"    </div>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "A single tile element to build 2-dimensional Metro-like, Pinterest-like, or whatever-you-like grids",
+		"scope": ""
+	},
+	"bul-box": {
+		"prefix": "bul-box",
+		"body": [
+			"<div class=\"box\">",
+			"  $1",
+			"</div>$0"
+		],
+		"description": "A white box to contain other elements",
+		"scope": ""
+	},
+	"bul-icon-fa": {
+		"prefix": "bul-icon-fa",
+		"body": [
+			"<span class=\"icon has-text-${1:info|success|warning|danger}\">",
+			"  <i class=\"fa fa-${2:info-circle}\"></i>",
+			"</span>$0"
+		],
+		"description": "Insert font-awesome icon.",
+		"scope": ""
+	},
+	"bul-icon-mdi": {
+		"prefix": "bul-icon-mdi",
+		"body": [
+			"<span class=\"icon has-text-${1:info|success|warning|danger}\">",
+			"  <i class=\"mdi mdi-${2:info-circle}\"></i>",
+			"</span>$0"
+		],
+		"description": "Insert Material Design Icons icon.",
+		"scope": ""
+	},
+	"bul-notification": {
+		"prefix": "bul-notification",
+		"body": [
+			"<div class=\"notification is-${1:primary|link|info|success|warning|danger}\">",
+			"  <button class=\"delete\"></button>",
+			"  ${2:You have been notified!}",
+			"</div>$0"
+		],
+		"description": "Bold notification blocks, to alert your users of something",
+		"scope": ""
+	},
+	"bul-hero": {
+		"prefix": "bul-hero",
+		"body": [
+			"<section class=\"hero is-${3:primary|info|sucess|warning|danger|light|dark}\">",
+			"  <div class=\"hero-body\">",
+			"    <div class=\"container\">",
+			"      <h1 class=\"title\">",
+			"        ${1:Hero title}",
+			"      </h1>",
+			"      <h2 class=\"subtitle\">",
+			"        ${2:Hero subtitle}",
+			"      </h2>",
+			"    </div>",
+			"  </div>",
+			"</section>$0"
+		],
+		"description": "An imposing hero banner to showcase something.",
+		"scope": ""
+	},
+	"bul-section": {
+		"prefix": "bul-section",
+		"body": [
+			"<section class=\"section\">",
+			"    <div class=\"container $1\">",
+			"      $2",
+			"    </div>",
+			"  </section>$0"
+		],
+		"description": "A simple container to divide your page into sections.",
+		"scope": ""
+	},
+	"bul-content": {
+		"prefix": "bul-content",
+		"body": [
+			"<div class=\"content\">",
+			"  $0",
+			"</div>"
+		],
+		"description": "A single class to handle WYSIWYG generated content, where only HTML tags are available",
+		"scope": ""
+	},
+	"bul-title": {
+		"prefix": "bul-title",
+		"body": [
+			"<${2:h1} class=\"title is-${3:3}\">${1:Title}</${2:h1}>$0"
+		],
+		"description": "Add a title to your page.",
+		"scope": ""
+	},
+	"bul-title:spaced": {
+		"prefix": "bul-title:spaced",
+		"body": [
+			"<${2:h1} class=\"title is-${3:3} is-spaced\">${1:Title}</${2:h1}>$0"
+		],
+		"description": "Add a title to your page.",
+		"scope": ""
+	},
+	"bul-subtitle": {
+		"prefix": "bul-subtitle",
+		"body": [
+			"<${2:h2} class=\"title is-${3:5}\">${1:Subtitle}</${2:h2}>$0"
+		],
+		"description": "Add a subtitle to your page.",
+		"scope": ""
+	},
+	"bul-img": {
+		"prefix": "bul-img",
+		"body": [
+			"<figure class=\"image is-${1:1by1|4by3|3by2|16by9|2by1}\">",
+			"  <img src=\"https://imgplaceholder.com/${2:256x256}/cccccc/757575/fa-image\">",
+			"</figure>$0"
+		],
+		"description": "A container for responsive images",
+		"scope": ""
+	},
+	"bul-img:fixed": {
+		"prefix": "bul-img:fixed",
+		"body": [
+			"<figure class=\"image is-${1:16x16|24x24|32x32|48x48|64x64|96x96|128x128}\">",
+			"  <img src=\"https://imgplaceholder.com/${1:32x32}/cccccc/757575/fa-image\">",
+			"</figure>$0"
+		],
+		"description": "A fixed container for responsive images",
+		"scope": ""
+	},
+	"bul-breadcrumb": {
+		"prefix": "bul-breadcrumb",
+		"body": [
+			"<nav class=\"breadcrumb\" aria-label=\"breadcrumbs\">",
+			"  <ul>",
+			"    <li><a href=\"${2:#}\">${1:Foobar}</a></li>$3",
+			"  </ul>",
+			"</nav>$0"
+		],
+		"description": "A simple breadcrumb component to improve your navigation experience.",
+		"scope": ""
+	},
+	"bul-breadcrumb:seperator": {
+		"prefix": "bul-breadcrumb:seperator",
+		"body": [
+			"<nav class=\"breadcrumb has-${1:arrow|bullet|dot|succeeds}-seperator\" aria-label=\"breadcrumbs\">",
+			"  <ul>",
+			"    <li><a href=\"${3:#}\">${2:Foobar}</a></li>$4",
+			"  </ul>",
+			"</nav>$0"
+		],
+		"description": "A different style for breadcrumbs.",
+		"scope": ""
+	},
+	"bul-breadcrumb-li": {
+		"prefix": "bul-breadcrumb-li",
+		"body": [
+			"    <li><a href=\"${2:#}\">${1:Foobar}</a></li>$0"
+		],
+		"description": "A new li for bulma breadcrum",
+		"scope": ""
+	},
+	"bul-breadcrumb-li:active": {
+		"prefix": "bul-breadcrumb-li:active",
+		"body": [
+			"    <li class=\"is-active\"><a href=\"${2:#}\" aria-current=\"${3:page}\">${1:Foobar}</a></li>$0"
+		],
+		"description": "A new li for bulma breadcrum",
+		"scope": ""
+	},
+	"bul-message": {
+		"prefix": "bul-message",
+		"body": [
+			"<div class=\"message is-${1:dark|primary|link|info|success|warning|danger}\">",
+			"  <div class=\"message-header\">",
+			"    <p>${2:Header}</p>",
+			"    <button class=\"delete\" aria-label=\"delete\"></button>",
+			"  </div>",
+			"  <div class=\"message-body\">",
+			"    ${3:Lorum ipsum dolor sit amet, consectetur adipiscing elit.}",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Colored message block, to emphasize part of your page",
+		"scope": ""
+	},
+	"bul-message:body-only": {
+		"prefix": "bul-message:body-only",
+		"body": [
+			"<div class=\"message is-${1:dark|primary|link|info|success|warning|danger}\">",
+			"  <div class=\"message-body\">",
+			"    ${3:Lorum ipsum dolor sit amet, consectetur adipiscing elit.}",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "Colored message block with no header.",
+		"scope": ""
+	},
+	"bul-modal": {
+		"prefix": "bul-modal",
+		"body": [
+			"<div class=\"modal\">",
+			"  <div class=\"modal-background\"></div>",
+			"  <div class=\"modal-content\">",
+			"    ${1:<!-- Any other Bulma elements you want -->}",
+			"  </div>",
+			"  <button class=\"modal-close is-large\" aria-label=\"close\"></button>",
+			"</div>$0"
+		],
+		"description": "A modal overlay, in which you can include any content you want.",
+		"scope": ""
+	},
+	"bul-modal:card": {
+		"prefix": "bul-modal:card",
+		"body": [
+			"<div class=\"modal\">",
+			"  <div class=\"modal-background\"></div>",
+			"  <div class=\"modal-card\">",
+			"    <header class=\"modal-card-head\">",
+			"      <p class=\"modal-card-title\">${1:Modal title}</p>",
+			"      <button class=\"delete\" aria-label=\"close\"></button>",
+			"    </header>",
+			"    <section class=\"modal-card-body\">",
+			"      ${2:Modal card boy.}",
+			"    </section>",
+			"    <footer class=\"modal-card-foot\">",
+			"      <button class=\"button is-success\">${3:Save changes}</button>",
+			"      <button class=\"button\">${4:Cancel}</button>",
+			"    </footer>",
+			"  </div>",
+			"</div>$0"
+		],
+		"description": "A classic modal overlay, in which you can include any content you want.",
+		"scope": ""
+	},
+	"bul-navbar": {
+		"prefix": "bul-navbar",
+		"body": [
+			"<nav class=\"navbar\" role=\"navigation\" aria-label=\"dropdown navigation\">",
+			"  <div class=\"navbar-brand\">",
+			"    <a class=\"navbar-item\" href=\"#\">",
+			"      <img src=\"https://imgplaceholder.com/112x28?text=Logo\" alt=\"Logo\" width=\"112\" height=\"28\">",
+			"    </a>",
+			"",
+			"    <button class=\"button navbar-burger\">",
+			"      <span></span>",
+			"      <span></span>",
+			"      <span></span>",
+			"    </button>",
+			"  </div>",
+			"",
+			"  <div class=\"navbar-menu\">",
+			"    <div class=\"navbar-start\">",
+			"",
+			"      <div class=\"navbar-item has-dropdown is-hoverable\">",
+			"        <a class=\"navbar-link\">",
+			"          ${1:Menu}",
+			"        </a>",
+			"",
+			"        <div class=\"navbar-dropdown\">",
+			"          <a class=\"navbar-item\">",
+			"            ${2:Foo}",
+			"          </a>",
+			"          <hr class=\"navbar-divider\">",
+			"          <div class=\"navbar-item\">",
+			"            ${3:Bar}",
+			"          </div>",
+			"        </div>",
+			"      </div>",
+			"",
+			"    </div>",
+			"  </div>",
+			"</nav>"
+		],
+		"description": "A responsive horizontal navbar that can supports images, links, buttons, and dropdowns",
+		"scope": ""
+	},
+	"bul-navbar:item-link": {
+		"prefix": "bul-navbar:item-link",
+		"body": [
+			"<a class=\"navbar-item\">",
+			" ${1:Foobar}",
+			"</a>$0"
+		],
+		"description": "Navbar link item",
+		"scope": ""
+	},
+	"bul-navbar:item-dropdown": {
+		"prefix": "bul-navbar:item-dropdown",
+		"body": [
+			"<div class=\"navbar-item has-dropdown is-hoverable\">",
+			"  <a class=\"navbar-link\">",
+			"    ${1:Foo}",
+			"  </a>",
+			"",
+			"  <div class=\"navbar-dropdown\">",
+			"    <a class=\"navbar-item\">",
+			"      ${1:Bar}",
+			"    </a>$0",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Navbar dropdown",
+		"scope": ""
+	}
+}
