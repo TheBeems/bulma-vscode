@@ -5,5 +5,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-## [0.1.0] - 2017-10-27
+## Released
+
+### [0.1.0] - 2017-10-27
 - Initial release
